@@ -1,6 +1,5 @@
 import { navLinks, menuItem } from "@/constants";
-import { NavLinkData } from "@/utils/types";
-import SimpleDrawer from "@/components/Admin/SimpleDrawer ";
+import SimpleDrawer from "./SimpleDrawer "
 import React, { useState, useEffect, useRef } from "react";
 
 const Navbar = () => {
@@ -12,7 +11,7 @@ const Navbar = () => {
     setIsDrawerOpen((prev) => !prev);
   };
 
-  const handleClickOutside = (event: MouseEvent) => {
+  const handleClickOutside = (event) => {
     if (
       drawerRef.current &&
       !drawerRef.current.contains(event.target) &&
@@ -34,7 +33,7 @@ const Navbar = () => {
     <nav className="w-full px-4 py-2 bg-white h-16">
       <div className="flex items-center justify-between">
         <div className="flex items-center [&>*:last-child]:opacity-0">
-          {navLinks.map((item: NavLinkData, index: number) => {
+          {navLinks.map((item, index) => {
             return (
               <div
                 key={`${item?.title}-${item?.value}-${index}`}
@@ -61,7 +60,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-6 px-4 relative">
-          {navLinks.map((item: NavLinkData, index: number) => {
+          {navLinks.map((item, index) => {
             if (!item?.user) return null;
 
             return (

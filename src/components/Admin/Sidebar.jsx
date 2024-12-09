@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { services } from "@/constants";
-import { Services } from "@/utils/types";
 import { Logout } from "@/assets";
 
 const Sidebar = () => {
@@ -41,7 +40,7 @@ const Sidebar = () => {
 
         <div className="flex flex-col items-center">
           <div className="flex flex-col items-center gap-6 py-12">
-            {services.map((item: Services) => (
+            {services.map((item) => (
               <span
                 key={item.title}
                 className="p-3 hover:bg-gray-100 hover:rounded-xl cursor-pointer"

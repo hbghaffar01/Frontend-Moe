@@ -8,7 +8,6 @@ import {
   Logout,
   Notification,
   Person,
-  PieChart,
   Success,
   User,
   Employees,
@@ -16,6 +15,8 @@ import {
   NotFound,
   Sun,
   Message,
+  PieCircle,
+  Team,
 } from "../assets";
 
 const services = [
@@ -158,6 +159,12 @@ const tableData = [
 ];
 
 const employeeDetails = {
+  user: {
+    name: "Haseeb Ghaffar",
+    designation: "Frontend Engineer",
+    work: "Frontend Developer skill with 5 years of experience.",
+    image: User
+  },
   personalInfo: [
     {
       label: "Email",
@@ -220,21 +227,29 @@ const employeeDetails = {
       name: "Haseeb Ghaffar",
       role: "Frontend Developer",
       attendance: "90%",
+      image: Team,
+      icon: PieCircle
     },
     {
       name: "Musaib",
       role: "Backend Developer",
       attendance: "90%",
+      image: Team,
+      icon: PieCircle
     },
     {
       name: "Omer",
       role: "Product Manager",
       attendance: "90%",
+      image: Team,
+      icon: PieCircle
     },
     {
       name: "Yalzin",
       role: "UI Designer",
       attendance: "90%",
+      image: Team,
+      icon: PieCircle
     },
   ],
 };

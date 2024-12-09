@@ -1,26 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { forwardRef } from "react";
 
-interface MenuItem {
-  title: string;
-  route: string;
-}
-
-interface SimpleDrawerProps {
-  menuItem: MenuItem[];
-  id: string;
-  position?: {
-    top?: string;
-    right?: string;
-    bottom?: string;
-    left?: string;
-  };
-  width?: string;
-  route?: boolean;
-  onStatusChange?: (status: string) => void; // Add the prop
-}
-
-const SimpleDrawer = forwardRef<HTMLDivElement, SimpleDrawerProps>(
+const SimpleDrawer = forwardRef(
   (
     {
       menuItem,
@@ -34,11 +15,11 @@ const SimpleDrawer = forwardRef<HTMLDivElement, SimpleDrawerProps>(
   ) => {
     const navigate = useNavigate();
 
-    const handleItemClick = (title: string) => {
+    const handleItemClick = (title) => {
       if (route) {
         navigate(`${title}`);
       } else {
-        onStatusChange?.(title); // Update status if function is provided
+        onStatusChange?.(title);
       }
     };
 

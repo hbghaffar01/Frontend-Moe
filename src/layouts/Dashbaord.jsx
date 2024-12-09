@@ -1,9 +1,9 @@
 import { cardData, tableData } from "@/constants";
-import DataTable from "@/components/Admin/Table";
-import CardGroup from "@/components/Admin/CardGroup";
+import DataTable from "@/components/Admin/Table.jsx";
+import CardGroup from "@/components/Admin/CardGroup.jsx";
 import { useLocation } from "react-router-dom";
 
-const Dashboard: React.FC = () => {
+const Dashboard = () => {
   const location = useLocation();
   const routeName = location.pathname.split("/").pop();
 

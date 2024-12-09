@@ -5,32 +5,31 @@ import {
   TableCell,
   TableRow,
 } from "@/components/ui/table";
-import { TableType } from "@/utils/types";
 import { Button } from "@/components/ui/button";
-import SimpleDrawer from "./SimpleDrawer ";
+import SimpleDrawer from "./SimpleDrawer "
 import { statuses } from "@/constants";
 import { useState, useRef, useEffect } from "react";
 
-const DataTable: React.FC<{ tableData: TableType[] }> = ({ tableData }) => {
-  const [openDrawerIndex, setOpenDrawerIndex] = useState<number | null>(null);
-  const [updatedTableData, setUpdatedTableData] = useState<TableType[]>(tableData);
-  const drawerRefs = useRef<(HTMLDivElement | null)[]>([]);
+const DataTable = ({ tableData }) => {
+  const [openDrawerIndex, setOpenDrawerIndex] = useState(null);
+  const [updatedTableData, setUpdatedTableData] = useState(tableData);
+  const drawerRefs = useRef([]);
 
-  const toggleDrawer = (index: number) => {
+  const toggleDrawer = (index) => {
     setOpenDrawerIndex((prev) => (prev === index ? null : index));
   };
 
-  const updateStatus = (index: number, newStatus: string) => {
+  const updateStatus = (index, newStatus) => {
     const updatedData = [...updatedTableData];
     updatedData[index].status = newStatus;
     setUpdatedTableData(updatedData);
   };
 
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
+    const handleClickOutside = (event) => {
       if (
         drawerRefs.current.every(
-          (ref) => ref && !ref.contains(event.target as Node)
+          (ref) => ref && !ref.contains(event.target)
         )
       ) {
         setOpenDrawerIndex(null);
@@ -91,7 +90,7 @@ const DataTable: React.FC<{ tableData: TableType[] }> = ({ tableData }) => {
                         position={{ top: "38", right: "75" }}
                         width="w-30"
                         route={false}
-                        onStatusChange={(newStatus: string) =>
+                        onStatusChange={(newStatus) =>
                           updateStatus(index, newStatus)
                         }
                       />
