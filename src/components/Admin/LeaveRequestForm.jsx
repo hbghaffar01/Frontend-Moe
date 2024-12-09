@@ -86,7 +86,6 @@ function LeaveRequestForm() {
         draggable: true,
       });
 
-      // Reset form fields
       setFirstName("");
       setLastName("");
       setEmployeeId("");
@@ -95,7 +94,7 @@ function LeaveRequestForm() {
       setFromDate("");
       setToDate("");
       setNote("");
-    }, 2000); // Simulate loading delay
+    }, 2000);
   };
 
   return (

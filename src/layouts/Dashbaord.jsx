@@ -1,7 +1,7 @@
 import PageLayout from "../Hoc";
-import { cardData, tableData } from "@/constants";
-import DataTable from "@/components/Admin/Table.jsx";
-import CardGroup from "@/components/Admin/CardGroup.jsx";
+import { cardData, tableData } from "../constants";
+import DataTable from "../components/Admin/Table.jsx";
+import CardGroup from "../components/Admin/CardGroup.jsx";
 import { useNavigate } from "react-router-dom";
 import { Calendar } from "../assets";
 

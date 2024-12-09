@@ -4,7 +4,7 @@ import {
   CardTitle,
   CardContent,
   CardFooter,
-} from "@/components/ui/card";
+} from "../../components/ui/card";
 
 const CardGroup = ({ cardData }) => {
   return (

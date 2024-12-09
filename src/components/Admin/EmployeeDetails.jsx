@@ -1,7 +1,7 @@
 import React from "react";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Label } from "@/components/ui/label";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader } from "../../components/ui/card";
+import { Label } from "../../components/ui/label";
+import { Badge } from "../../components/ui/badge";
 
 const EmployeeDetails = ({ employeeDetails }) => {
   return (

@@ -1,4 +1,4 @@
-import { navLinks, menuItem } from "@/constants";
+import { navLinks, menuItem } from "../../constants";
 import SimpleDrawer from "./SimpleDrawer "
 import React, { useState, useEffect, useRef } from "react";
 

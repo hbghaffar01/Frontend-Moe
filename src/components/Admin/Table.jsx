@@ -4,10 +4,10 @@ import {
   TableBody,
   TableCell,
   TableRow,
-} from "@/components/ui/table";
-import { Button } from "@/components/ui/button";
+} from "../../components/ui/table";
+import { Button } from "../../components/ui/button";
 import SimpleDrawer from "./SimpleDrawer "
-import { statuses } from "@/constants";
+import { statuses } from "../../constants";
 import { useState, useRef, useEffect } from "react";
 
 const DataTable = ({ tableData }) => {
