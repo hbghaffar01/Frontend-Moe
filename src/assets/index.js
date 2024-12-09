@@ -1,4 +1,4 @@
-import Arrowdown from "./Arrowdown.svg";
+import Arrowdown from "./ArrowDown.svg";
 import Calendar from "./calendar.svg";
 import Download from "./download.svg";
 import Error from "./download.svg";
