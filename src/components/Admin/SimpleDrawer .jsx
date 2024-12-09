@@ -17,7 +17,7 @@ const SimpleDrawer = forwardRef(
 
     const handleItemClick = (title) => {
       if (route) {
-        navigate(`${title}`);
+        navigate(title);
       } else {
         onStatusChange?.(title);
       }
@@ -45,7 +45,7 @@ const SimpleDrawer = forwardRef(
                   : "cursor-default text-gray-800"
               }`}
               onClick={() => {
-                handleItemClick(item.title);
+                handleItemClick(item.route);
               }}
             >
               <span className="font-medium">{item.title}</span>

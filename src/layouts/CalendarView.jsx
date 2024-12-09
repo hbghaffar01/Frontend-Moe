@@ -1,5 +1,12 @@
+import Calendar from "../components/Admin/calendar";
+import PageLayout from "../Hoc";
+
 const CalendarView = () => {
-  return <div>CalendarView</div>;
+  return (
+    <PageLayout>
+      <Calendar />
+    </PageLayout>
+  );
 };
 
 export default CalendarView;

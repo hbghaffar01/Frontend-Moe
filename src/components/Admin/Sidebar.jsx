@@ -26,6 +26,10 @@ const Sidebar = () => {
     navigate(route);
   };
 
+  const handleLogoClick = () => {
+    navigate("/Dashboard");
+  };
+
   return (
     <aside className="min-h-screen">
       <div className="w-16 h-full flex items-center justify-between flex-col">
@@ -35,6 +39,7 @@ const Sidebar = () => {
             alt="Ministry of E-commerce"
             decoding="async"
             className="w-[40px] h-[40px] cursor-pointer"
+            onClick={handleLogoClick}
           />
         </div>
 

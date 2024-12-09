@@ -39,7 +39,7 @@ const services = [
 
 const menuItem = [
   { title: "Profile", route: "/Dashboard" },
-  { title: "Leave Request", route: "/Dashboard/EmployeeDetails" },
+  { title: "Leave Request", route: "/Dashboard/Leave" },
   { title: "Setting", route: "/Dashboard/EmployeeDetails" },
 ];
 

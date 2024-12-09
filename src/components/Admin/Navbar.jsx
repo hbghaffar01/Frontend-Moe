@@ -30,8 +30,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="w-full px-4 py-2 bg-white h-16">
-      <div className="flex items-center justify-between">
+    <nav className="w-full px-4 py-2 bg-white lg:h-16 xs:h-24">
+      <div className="flex items-center justify-between p-0 m-0">
         <div className="flex items-center [&>*:last-child]:opacity-0">
           {navLinks.map((item, index) => {
             return (
@@ -76,7 +76,7 @@ const Navbar = () => {
 
                 {item?.user?.profile && item?.user?.value && (
                   <button
-                    className="bg-info rounded-xl h-10 px-4 flex items-center gap-3"
+                    className="bg-info rounded-xl h-10 lg:px-4 xs:px-8 flex items-center gap-3"
                     key={`profile-${item?.user?.value}`}
                   >
                     <span>{item?.user?.value}</span>

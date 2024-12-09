@@ -5,7 +5,7 @@ import { employeeDetails } from "../../constants";
 const TeamMembers = () => {
   return (
     <div className="w-full h-full">
-      <Card>
+      <Card className="shadow">
         {employeeDetails?.teamMembers.map((member) => (
           <div className="w-full p-4 border-b" key={member.name}>
             <div className="flex items-center justify-between">
@@ -15,7 +15,7 @@ const TeamMembers = () => {
                   alt={member.name}
                   className="size-10 rounded-full"
                 />
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-2">
                   <span className="text-sm text-grey-100 font-semibold">
                     {member.name}
                   </span>
