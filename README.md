@@ -9,16 +9,38 @@ Frontend-MOE is a web application that provides a dashboard interface with featu
 - Built with TypeScript
 - Responsive design
 
-## Getting Started
-
-To get started with the project, follow these steps:
-
-### Prerequisites
-Make sure you have [Node.js](https://nodejs.org/) and [Yarn](https://yarnpkg.com/) installed on your machine.
-
 ### Installation
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/hbghaffar01/Frontend-Moe.git
    cd Frontend-Moe
+
+2. ## Setup
+
+1. Install `yarn` if needed
+
+```bash
+npm install -g yarn
+```
+
+```bash
+yarn install
+```
+
+```bash
+yarn dev
+```
+To expose and test responsiveness on mutilple devices
+```bash
+yarn dev -- --host
+```
+
+```bash
+yarn build
+```
+
+To test build run
+```bash
+yarn build
+```

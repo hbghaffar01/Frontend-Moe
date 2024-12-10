@@ -15,7 +15,7 @@ import Leave from "./layouts/leaves.jsx";
 const App = () => {
   return (
     <Router>
-      <main className="m-0 p-0 flex">
+      <main className="m-0 p-0 flex items-center overflow-y-hidden">
         <Sidebar />
         <div className="flex-grow">
           <Navbar />
